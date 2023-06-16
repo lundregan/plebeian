@@ -7,8 +7,8 @@ const { get } = require('http');
 const data = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'data.json')));
 
 const addKill = (victim, abuser) => {
-    let victimId = victim.id;
-    let abuserId = abuser.id;
+    let victimId = victim;
+    let abuserId = abuser;
 
     if (!data[abuserId]) {
         data[abuserId] = {
