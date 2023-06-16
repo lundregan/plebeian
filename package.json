@@ -1,0 +1,27 @@
+{
+    "name": "discord-bot-plebian",
+    "version": "0.0.1",
+    "description": "Bot for plebian server",
+    "main": "main.js",
+    "scripts": {
+        "dev": "node main.js",
+        "deploy-dev": "pnpm run deploy-commands && pnpm run dev",
+        "deploy-commands": "node deploy-commands.js",
+        "test": "test"
+    },
+    "keywords": [
+        "bot",
+        "discord",
+        "plebian",
+        "lundregan"
+    ],
+    "author": "Ethan Lundregan",
+    "license": "MIT",
+    "dependencies": {
+        "discord.js": "^14.11.0",
+        "dotenv": "^16.1.4"
+    },
+    "devDependencies": {
+        "eslint": "^8.42.0"
+    }
+}
