@@ -12,6 +12,7 @@ const addKill = (victim, abuser) => {
 
     if (!data[abuserId]) {
         data[abuserId] = {
+            name: abuser.username,
             kills: {}
         };
     }
